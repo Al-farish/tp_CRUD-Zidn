@@ -1,0 +1,194 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3%;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-nav a {
+  font-size: 1.3rem;
+  color: aliceblue;
+  font-style: bold;
+  margin: 1rem;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  color: aliceblue;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: #857979;
+}
+
+.tabel_buku h2,
+.tabel_buku p,
+.tabel_penerbit h2,
+.title h2 {
+  text-align: center;
+  padding-top: 15vh;
+  margin-bottom: 2rem;
+}
+
+.tabel_penerbit {
+  padding-bottom: 10vh;
+}
+
+/* Search box */
+.navbar .search-form input[type="text"] {
+  flex: 1;
+  font-size: 15px;
+  padding: 10px 35px;
+  margin-right: 5px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+/* Button */
+.navbar .search-form button,
+.tabel_buku button,
+.tabel_penerbit button,
+.form_buku button,
+.form_edit button {
+  background-color: #606560;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06); /* Shadow */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: auto;
+}
+
+.tabel_buku button,
+.tabel_penerbit button {
+  float: right;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.tabel_buku button:hover,
+.tabel_penerbit button:hover,
+.navbar .search-form button:hover,
+.form_buku button:hover,
+.form_edit button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.15); /* More shadow on hover */
+}
+
+.navbar .search-form button:active {
+  transform: translateY(4px); /* Move button down on click */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06); /* Less shadow on click */
+}
+
+/* Table */
+.tabel_buku table,
+.tabel_penerbit table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabel_buku table thead tbody,
+.tabel_penerbit table thead tbody {
+  border: 1px solid #ddd;
+}
+
+.tabel_buku tbody tr:last-child,
+.tabel_penerbit tbody tr:last-child {
+  border-bottom: none;
+}
+
+.tabel_buku tbody tr:nth-child(even),
+.tabel_penerbit tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tabel_buku tbody tr:hover,
+.tabel_penerbit tbody tr:hover {
+  background-color: #ddd;
+}
+
+.tabel_buku th,
+.tabel_buku td,
+.tabel_penerbit th,
+.tabel_penerbit td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Form */
+/* CSS code to style the input fields in the form */
+.form_buku input[type="text"] {
+  font-size: 20px;
+  width: 40%; /* Set the width of the input field to 100% */
+  padding: 10px 20px; /* Add some padding to the input field */
+  display: inline-block; /* Display the input field as an inline-block element */
+  border: 1px solid #ccc; /* Add a border to the input field */
+  box-sizing: border-box; /* Define the border-box for the input field */
+  border-radius: 4px; /* Add rounded corners to the input field */
+}
+
+.form_edit table {
+  width: 45%;
+  text-align: right;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 15px 60px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.form_edit input[type="text"] {
+  width: 20;
+  padding: 15px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+
+.tabel_buku table tbody tr a,
+.tabel_penerbit table tbody tr a {
+  color: #999999;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.tabel_penerbit {
+  padding-bottom: 500px;
+}
